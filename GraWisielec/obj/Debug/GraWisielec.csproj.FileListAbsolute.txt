@@ -1,0 +1,6 @@
+C:\Users\rmich\Documents\GraLogiczna\GraWisielec\bin\Debug\GraWisielec.exe.config
+C:\Users\rmich\Documents\GraLogiczna\GraWisielec\bin\Debug\GraWisielec.exe
+C:\Users\rmich\Documents\GraLogiczna\GraWisielec\bin\Debug\GraWisielec.pdb
+C:\Users\rmich\Documents\GraLogiczna\GraWisielec\obj\Debug\GraWisielec.csprojAssemblyReference.cache
+C:\Users\rmich\Documents\GraLogiczna\GraWisielec\obj\Debug\GraWisielec.exe
+C:\Users\rmich\Documents\GraLogiczna\GraWisielec\obj\Debug\GraWisielec.pdb
