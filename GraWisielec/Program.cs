@@ -38,6 +38,7 @@ namespace GraWisielec
                         if(word.Contains(letter))
                         {
                             lettersToGuessLeft--;
+                            triesLeft++;
                         }
                     }
                     
@@ -86,6 +87,16 @@ namespace GraWisielec
             Console.WriteLine();
             Console.Write("Słowo: ");
 
+            for(int i = 0; i < word.Length;i++)
+            {
+                if (guessedLetters.Contains(word[i]))
+                {
+                    Console.Write(word[i]);
+                } else
+                {
+                    Console.Write("_");
+                }
+            }
 
             Console.WriteLine();
         }
