@@ -8,21 +8,33 @@ namespace GraWisielec
 {
     class Program
     {
+        static Dictionary<int, string> dictOfWords = new Dictionary<int, string>();
+
         static void Main(string[] args)
         {
 
+            createDictOfWords();
             Console.WriteLine("Witaj w grze wisielec, naciśnij dowolny przycisk aby rozpocząć.");
-
             Console.ReadKey();
 
             game();
         }
 
+        static void createDictOfWords()
+        {
+            dictOfWords.Add(1, "jezdnia");
+            dictOfWords.Add(2, "rowerzysta");
+            dictOfWords.Add(3, "komputer");
+            dictOfWords.Add(4, "drukarka");
+            dictOfWords.Add(5, "poduszka");
+            dictOfWords.Add(6, "domek");
+        }
         static void game()
         {
             int triesLeft = 11;
-            int lettersToGuessLeft = 5;
-            String word = "domek";
+            Random rnd = new Random();
+            String word = dictOfWords[rnd.Next(1, 7)];
+            int lettersToGuessLeft = word.Length;
             String guessedLetters = "";
 
             while(triesLeft>0)
@@ -40,6 +52,9 @@ namespace GraWisielec
                             lettersToGuessLeft--;
                             triesLeft++;
                         }
+                    } else
+                    {
+                        triesLeft++;
                     }
                     
                     if(lettersToGuessLeft<=0)
